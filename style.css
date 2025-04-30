@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height for vertical centering */
+}
+
+.container {
+  height: 90vh;
+  width: 80vw;
+  max-width: 60vh; /* Normal size */
+  padding: 30px;
+  border: 2px solid white; /* White border */
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Content center horizontally */
+}
+
+.header {
+  text-align: center;
+  margin-top: 20px; /* Top margin */
+  margin-bottom: 30px; /* Bottom margin */
+}
+
+.header img {
+  width: 80px; /* Adjust the size of the logo */
+  border-radius: 45%; /* Add border-radius */
+  margin: 0 auto; /* Center align the image */
+  display: block;
+}
+.first-heading h1 {
+  text-align: center;
+  font-family: var(--encore-title-font-stack); /* Custom font-family */
+  font-weight: 700; /* Bold text */
+  font-size: 28px;
+  color: white;
+  margin-bottom: 15px;
+  white-space: pre-line; /* Break text into multiple lines */
+  line-height: 1.5; /* Adjust line height */
+}
+
+.first-heading h1 span {
+  display: block; /* This will make 'to start listening' appear on a new line */
+}
+
+#email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 👈 aligns everything to the left */
+  width: 300px; /* fixed width */
+  margin: 0 auto; /* center the block itself */
+  padding: 20px;
+}
+
+#email label {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+#email input,
+#email button {
+  width: 100%; /* same width for both */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+#email input {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+
+#email input::placeholder {
+  color: white;
+}
+
+#email button {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.other-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center the buttons like 'Next' */
+  gap: 15px; /* spacing between buttons */
+  margin-top: 30px;
+}
+
+.social-btn {
+  width: 300px;
+  padding: 10px 16px; /* left-right padding */
+  font-size: 17px; /* slightly larger text */
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.social-btn img {
+  position: absolute;
+  left: 16px; /* icon close to left edge */
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.social-btn span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Styling for the OR divider */
+.or-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 13px 0; /* Adjust the space between the line and other elements */
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #ccc; /* Line style */
+  margin: 0 10px; /* Space between the line and the "OR" text */
+}
+
+.or-divider span {
+  font-size: 16px;
+  color: #ccc; /* Color for the "OR" text */
+  font-weight: 500;
+}
